@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "31dd808d-a369-4d75-a5ae-0447cbbd8008",
+		"name": "School Management",
+		"description": "This collection includes two APIs:\n\n/addSchool (POST)\n\n/listSchools (GET)\n\n\\--manage school data using Node.js, Express, and MySQL.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34578825"
+	},
+	"item": [
+		{
+			"name": "/addSchool",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Delhi High School\",\r\n  \"address\": \"Delhi, India\",\r\n  \"latitude\": 22.5726,\r\n  \"longitude\": 88.3639\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addSchool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addSchool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/listSchools?latitude=21.2&longitude=40.1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "21.2"
+						},
+						{
+							"key": "longitude",
+							"value": "40.1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
