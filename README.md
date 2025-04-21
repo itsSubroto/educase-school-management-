@@ -1,10 +1,10 @@
-## Assignment School Managgement System
+## Assignment -- School Managgement System
 - This add school info into database and show availabe schools near to you.
 - It is a epress backednd that has 2 end point :-
   
 - ## /listSchools (get) :
 - -- It takes two parameters i) latitude & ii) longitude
-- --- It returns the list of schools ## sorted nearest to you.
+- --- It returns the list of schools **sorted nearest to you.**
 
   
 -  ## /addSchool (post) :
