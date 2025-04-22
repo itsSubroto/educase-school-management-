@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // variables
-const port = 3000;
+const port = process.env.PORT;
 
 // Database connection
 
